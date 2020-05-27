@@ -1,3 +1,21 @@
 #index:
 #    path: /
 #    controller: App\Controller\DefaultController::index
+
+
+app_products_index:
+    path: /products
+    controller: App\Controller\ProductController::index
+
+app_products_post:
+    path: /products/new
+    controller: App\Controller\ProductController::new
+
+app_products_show:
+    path: /products/{id}
+    controller: App\Controller\ProductController::show
+
+app_products_update:
+    path: /products/{id}/update
+    controller: App\Controller\ProductController::update
+
